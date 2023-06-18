@@ -47,7 +47,7 @@ class Importer extends Page
             $zeusPost = $this->savePost($post);
             $tags = $post->taxonomies()->get();
 
-            if (!$tags->isEmpty()) {
+            if (! $tags->isEmpty()) {
                 $zeusPost->syncTagsWithType($tags->where('taxonomy', 'post_tag')->pluck('term.name')->toArray(), 'tag');
                 $zeusPost->syncTagsWithType($tags->where('taxonomy', 'category')->pluck('term.name')->toArray(), 'category');
             }
@@ -59,13 +59,13 @@ class Importer extends Page
     public function savePost($post)
     {
         $zeusPost = config('zeus-sky.models.post')::findOrNew($post->ID);
-        if (!$zeusPost->exists || $this->overwrite) {
+        if (! $zeusPost->exists || $this->overwrite) {
             $zeusPost->id = $post->ID;
             $zeusPost->title = $post->post_title;
-            $zeusPost->slug = (!empty($post->slug)) ? $post->slug : Str::slug($post->post_title);
+            $zeusPost->slug = (! empty($post->slug)) ? $post->slug : Str::slug($post->post_title);
             $zeusPost->description = $post->post_excerpt;
             $zeusPost->status = $post->post_status;
-            $zeusPost->password = !empty($post->post_password) ? $post->post_password : null;
+            $zeusPost->password = ! empty($post->post_password) ? $post->post_password : null;
             $zeusPost->post_type = $post->post_type;
             $zeusPost->content = $post->post_content;
             $zeusPost->user_id = auth()->user()->id; //$post->post_author;
