@@ -25,6 +25,7 @@ class Importer extends Page
     {
         if (config('app.zeus-demo', false)) {
             $this->notify('secondary', 'this is just a demo');
+            return;
         }
 
         if ($this->truncate) {
