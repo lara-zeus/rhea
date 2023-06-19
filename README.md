@@ -14,13 +14,13 @@
 
 <h1 align="center">Lara Zeus Rhea</h1>
 
-Lara-zeus Rhea is a tool to migrate from wrodpress to zeus sky
+Lara-zeus Rhea is a tool to migrate from wordpress to zeus sky
 
 > small tasks can be time-consuming, let us build these for you,
 
 ## features
-- 🔥 truncate before importing.
-- 🔥 overwrite when importing.
+- 🔥 truncate before importing
+- 🔥 overwrite when importing
 - 🔥 will import categories and tags
 - 🔥 import posts and pages
 
