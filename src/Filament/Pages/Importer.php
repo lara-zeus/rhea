@@ -21,6 +21,11 @@ class Importer extends Page
 
     public $wpPosts;
 
+    protected static function getNavigationGroup(): ?string
+    {
+        return __(config('zeus-rhea.navigation_group_label', 'Sky'));
+    }
+    
     public function submit()
     {
         if (config('app.zeus-demo', false)) {
