@@ -2,6 +2,14 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## 1.0.4 - 2023-06-20
+
+### What's Changed
+
+- set`getNavigationGroup` from config in filament page by @atmonshi in https://github.com/lara-zeus/rhea/pull/4
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/1.0.3...1.0.4
+
 ## 1.0.3 - 2023-06-20
 
 ### What's Changed
