@@ -2,6 +2,19 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## 1.0.3 - 2023-06-20
+
+### What's Changed
+
+- Fix typo for wordpress by @KnightVision90 in https://github.com/lara-zeus/rhea/pull/2
+- allow to configure navigation group label by @atmonshi in https://github.com/lara-zeus/rhea/pull/3
+
+### New Contributors
+
+- @KnightVision90 made their first contribution in https://github.com/lara-zeus/rhea/pull/2
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/1.0.2...1.0.3
+
 ## 1.0.2 - 2023-06-19
 
 ### What's Changed
