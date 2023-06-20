@@ -47,6 +47,7 @@ class Importer extends Page
 
         foreach ($posts as $post) {
             $zeusPost = $this->savePost($post);
+            /** @phpstan-ignore-next-line */
             $tags = $post->taxonomies()->get();
 
             if (! $tags->isEmpty()) {
