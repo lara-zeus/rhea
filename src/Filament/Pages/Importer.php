@@ -25,7 +25,7 @@ class Importer extends Page
     {
         return __(config('zeus-rhea.navigation_group_label', 'Sky'));
     }
-    
+
     public function submit()
     {
         if (config('app.zeus-demo', false)) {
