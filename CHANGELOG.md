@@ -2,6 +2,14 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## 1.0.6 - 2023-06-23
+
+### What's Changed
+
+- Update composer.lock by @atmonshi in https://github.com/lara-zeus/rhea/pull/6
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/1.0.5...1.0.6
+
 ## 1.0.5 - 2023-06-23
 
 ### What's Changed
