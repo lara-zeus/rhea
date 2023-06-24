@@ -2368,16 +2368,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.25",
+            "version": "2.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "c3ef408448d5328c5870a5d68d7fa9dc5c4e71e3"
+                "reference": "591dc7aed8781c17eedcbeedb5198af452d80d39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/c3ef408448d5328c5870a5d68d7fa9dc5c4e71e3",
-                "reference": "c3ef408448d5328c5870a5d68d7fa9dc5c4e71e3",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/591dc7aed8781c17eedcbeedb5198af452d80d39",
+                "reference": "591dc7aed8781c17eedcbeedb5198af452d80d39",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2449,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.25"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.26"
             },
             "funding": [
                 {
@@ -2457,7 +2457,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-24T18:21:23+00:00"
+            "time": "2023-06-24T22:56:18+00:00"
         },
         {
             "name": "laravel/framework",
