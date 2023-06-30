@@ -2,6 +2,14 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## 1.0.9 - 2023-06-30
+
+### What's Changed
+
+- update core by @atmonshi in https://github.com/lara-zeus/rhea/pull/9
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/1.0.8...1.0.9
+
 ## 1.0.8 - 2023-06-24
 
 ### What's Changed
