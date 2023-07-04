@@ -2,6 +2,19 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## 1.0.12 - 2023-07-04
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/lara-zeus/rhea/pull/12
+- update all dependecies by @atmonshi in https://github.com/lara-zeus/rhea/pull/13
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/lara-zeus/rhea/pull/12
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/1.0.11...1.0.12
+
 ## 1.0.11 - 2023-07-01
 
 ### What's Changed
