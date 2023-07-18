@@ -34,6 +34,7 @@ class Importer extends Page
                 ->title('this is just a demo')
                 ->warning()
                 ->send();
+
             return;
         }
 
