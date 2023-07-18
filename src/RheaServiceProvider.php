@@ -2,14 +2,22 @@
 
 namespace LaraZeus\Rhea;
 
-use Filament\PluginServiceProvider;
-use LaraZeus\Rhea\Filament\Pages\Importer;
+use LaraZeus\Core\CoreServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class RheaServiceProvider extends PluginServiceProvider
+class RheaServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'zeus-rhea';
+    public function packageBooted(): void
+    {
+        CoreServiceProvider::setThemePath('rhea');
+    }
 
-    protected array $pages = [
-        Importer::class,
-    ];
+    public function configurePackage(Package $package): void
+    {
+        $package
+            ->name('zeus-rhea')
+            ->hasViews('zeus')
+            ->hasConfigFile();
+    }
 }

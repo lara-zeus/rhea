@@ -5,6 +5,7 @@ namespace LaraZeus\Rhea\Filament\Pages;
 use Corcel\Model\Post;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Toggle;
+use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
@@ -13,7 +14,7 @@ class Importer extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'zeus-rhea::pages.importer';
+    protected static string $view = 'zeus::pages.importer';
 
     public bool $truncate = false;
 
@@ -21,16 +22,18 @@ class Importer extends Page
 
     public $wpPosts;
 
-    protected static function getNavigationGroup(): ?string
+    public static function getNavigationGroup(): ?string
     {
-        return __(config('zeus-rhea.navigation_group_label', 'Sky'));
+        return __(config('zeus.navigation_group_label', 'Sky'));
     }
 
     public function submit()
     {
         if (config('app.zeus-demo', false)) {
-            $this->notify('secondary', 'this is just a demo');
-
+            Notification::make()
+                ->title('this is just a demo')
+                ->warning()
+                ->send();
             return;
         }
 
@@ -43,7 +46,11 @@ class Importer extends Page
             Schema::disableForeignKeyConstraints();
             config('zeus-sky.models.tag')::truncate();
             Schema::enableForeignKeyConstraints();
-            $this->notify('primary', 'all tables has been truncated');
+
+            Notification::make()
+                ->title('all tables has been truncated')
+                ->success()
+                ->send();
         }
 
         // get by status todo
@@ -61,7 +68,10 @@ class Importer extends Page
             }
         }
 
-        $this->notify('success', 'Done!');
+        Notification::make()
+            ->title('Done!')
+            ->success()
+            ->send();
     }
 
     public function savePost($post)
