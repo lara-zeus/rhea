@@ -24,7 +24,7 @@ class Importer extends Page
 
     public static function getNavigationGroup(): ?string
     {
-        return __(config('zeus.navigation_group_label', 'Sky'));
+        return __(config('zeus.navigation_group_label', 'Rhea'));
     }
 
     public function submit()
