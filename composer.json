@@ -35,7 +35,7 @@
     "require-dev": {
         "orchestra/testbench": "^7.0 || ^8.0",
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^6.0",
+        "nunomaduro/collision": "^7.0",
         "nunomaduro/larastan": "^2.0.1",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0"
@@ -66,14 +66,6 @@
         {
             "type": "github",
             "url": "https://github.com/atmonshi/filament-navigation"
-        },
-        {
-            "type": "path",
-            "url": "../core"
-        },
-        {
-            "type": "path",
-            "url": "../sky"
         }
     ]
 }
