@@ -16,7 +16,11 @@
         "laravel cms",
         "filamentphp"
     ],
-    "homepage": "https://larazeus.com",
+    "homepage": "https://larazeus.com/rhea",
+    "support": {
+        "issues": "https://github.com/lara-zeus/rhea/issues",
+        "source": "https://github.com/lara-zeus/rhea"
+    },
     "license": "MIT",
     "type": "library",
     "authors": [

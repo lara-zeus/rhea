@@ -8,15 +8,12 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class RheaServiceProvider extends PackageServiceProvider
 {
-    public function packageBooted(): void
-    {
-        CoreServiceProvider::setThemePath('rhea');
-    }
+    public static string $name = 'zeus-rhea';
 
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('zeus-rhea')
+            ->name(static::$name)
             ->hasViews('zeus')
             ->hasConfigFile();
     }
