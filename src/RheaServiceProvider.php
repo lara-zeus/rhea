@@ -2,7 +2,6 @@
 
 namespace LaraZeus\Rhea;
 
-use LaraZeus\Core\CoreServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
