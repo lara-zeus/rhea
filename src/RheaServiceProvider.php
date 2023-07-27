@@ -2,7 +2,6 @@
 
 namespace LaraZeus\Rhea;
 
-use LaraZeus\Core\CoreServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -14,7 +13,6 @@ class RheaServiceProvider extends PackageServiceProvider
     {
         $package
             ->name(static::$name)
-            ->hasViews('zeus')
-            ->hasConfigFile();
+            ->hasViews('zeus');
     }
 }

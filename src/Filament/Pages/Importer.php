@@ -9,6 +9,7 @@ use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+use LaraZeus\Rhea\RheaPlugin;
 
 class Importer extends Page
 {
@@ -24,7 +25,7 @@ class Importer extends Page
 
     public static function getNavigationGroup(): ?string
     {
-        return __(config('zeus.navigation_group_label', 'Rhea'));
+        return RheaPlugin::get()->getNavigationGroupLabel();
     }
 
     public function submit()
