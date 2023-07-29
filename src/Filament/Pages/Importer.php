@@ -10,6 +10,7 @@ use Filament\Pages\Page;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use LaraZeus\Rhea\RheaPlugin;
+use LaraZeus\Sky\SkyPlugin;
 
 class Importer extends Page
 {
@@ -40,13 +41,13 @@ class Importer extends Page
         }
 
         if ($this->truncate) {
-            $posts = config('zeus-sky.models.post')::get();
+            $posts = SkyPlugin::get()->getPostModel()::get();
             $posts->each(function ($item, $key) {
                 $item->tags()->detach();
                 $item->delete();
             });
             Schema::disableForeignKeyConstraints();
-            config('zeus-sky.models.tag')::truncate();
+            SkyPlugin::get()->getTagModel()::truncate();
             Schema::enableForeignKeyConstraints();
 
             Notification::make()
@@ -55,8 +56,6 @@ class Importer extends Page
                 ->send();
         }
 
-        // get by status todo
-        // get by post type todo
         $posts = Post::where('post_status', '!=', 'auto-draft')->get();
 
         foreach ($posts as $post) {
@@ -78,7 +77,7 @@ class Importer extends Page
 
     public function savePost($post)
     {
-        $zeusPost = config('zeus-sky.models.post')::findOrNew($post->ID);
+        $zeusPost = SkyPlugin::get()->getPostModel()::findOrNew($post->ID);
         if (! $zeusPost->exists || $this->overwrite) {
             $zeusPost->id = $post->ID;
             $zeusPost->title = $post->post_title;
