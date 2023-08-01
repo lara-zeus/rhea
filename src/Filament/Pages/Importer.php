@@ -3,7 +3,7 @@
 namespace LaraZeus\Rhea\Filament\Pages;
 
 use Corcel\Model\Post;
-use Filament\Forms\Components\Card;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
@@ -101,7 +101,7 @@ class Importer extends Page
     protected function getFormSchema(): array
     {
         return [
-            Card::make()->id('main-card')->columns(2)->schema([
+            Section::make()->id('main-card')->columns(2)->schema([
                 Toggle::make('truncate')->label('Truncate')->helperText('truncate the current Posts table'),
                 Toggle::make('overwrite')->label('Overwrite')->helperText('overwrite all existences posts'),
             ]),
