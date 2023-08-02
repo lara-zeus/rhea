@@ -33,8 +33,7 @@
     "require": {
         "php": "^8.0",
         "jgrossi/corcel": "^7.0",
-        "lara-zeus/sky": "3.x-dev",
-        "lara-zeus/core": "3.x-dev"
+        "lara-zeus/sky": "^3.0"
     },
     "require-dev": {
         "orchestra/testbench": "^7.0 || ^8.0",
