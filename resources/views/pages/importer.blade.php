@@ -1,10 +1,10 @@
 <div class="space-y-4">
 
-    <x-filament::card>
+    <x-filament::section>
         found:
         <span class="text-md font-semibold">{{ $this->getViewData()['wpPosts']->count() }}</span>
         posts
-    </x-filament::card>
+    </x-filament::section>
 
     {{ $this->form }}
 
