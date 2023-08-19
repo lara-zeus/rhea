@@ -5,14 +5,14 @@ weight: 3
 
 ## Configuration
 
-to publish the config file run the command:
+to configure the plugin Rhea, you can pass the configuration to the plugin in `adminPanelProvider`
 
-```bash
-php artisan vendor:publish --tag=zeus-rhea-config
+these all the available configuration, and their defaults values
+
+```php
+RheaPlugin::make()
+    ->navigationGroupLabel('Rhea')
 ```
-
-you can pass `--force` option to force publishing the config file.
-the only config available is setting the `navigation_group_label`.
 
 ## Database Setup 
 
