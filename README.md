@@ -12,11 +12,13 @@
 
 </p>
 
-<h1 align="center">Lara Zeus Rhea</h1>
-
 Lara-zeus Rhea is a tool to migrate from wordpress to zeus sky
 
 > small tasks can be time-consuming, let us build these for you,
+
+<a href="https://github.com/sponsors/danharrin">
+<img alt="filament-logo" src="https://larazeus.com/images/filament-sponsor-banner.png">
+</a>
 
 ## features
 - 🔥 truncate before importing
