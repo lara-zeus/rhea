@@ -4,11 +4,13 @@ namespace LaraZeus\Rhea;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Support\Concerns\EvaluatesClosures;
 use LaraZeus\Rhea\Filament\Pages\Importer;
 
 class RheaPlugin implements Plugin
 {
     use Configuration;
+    use EvaluatesClosures;
 
     public function getId(): string
     {
