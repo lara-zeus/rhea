@@ -42,6 +42,11 @@ use the instructions from the package corcel [here](https://github.com/corcel/co
 
 visit the url `/admin/importer` to start importing your posts.
 
+## Quick start
+
+[![starter-kit](https://larazeus.com/images/starter-kit-mini.png?v=2)](https://github.com/lara-zeus/zeus)
+[![artemis](https://larazeus.com/images/artemis-mini.png?v=2)](https://github.com/lara-zeus/artemis)
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
