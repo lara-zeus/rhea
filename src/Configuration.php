@@ -2,19 +2,21 @@
 
 namespace LaraZeus\Rhea;
 
+use Closure;
+
 trait Configuration
 {
-    protected string $navigationGroupLabel = 'Rhea';
+    protected Closure | string $navigationGroupLabel = 'Rhea';
 
-    public function navigationGroupLabel(string $lable): static
+    public function navigationGroupLabel(Closure | string $label): static
     {
-        $this->navigationGroupLabel = $lable;
+        $this->navigationGroupLabel = $label;
 
         return $this;
     }
 
-    public function getNavigationGroupLabel(): string
+    public function getNavigationGroupLabel(): Closure | string
     {
-        return $this->navigationGroupLabel;
+        return $this->evaluate($this->navigationGroupLabel);
     }
 }
