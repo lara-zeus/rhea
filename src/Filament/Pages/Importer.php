@@ -41,13 +41,13 @@ class Importer extends Page
         }
 
         if ($this->truncate) {
-            $posts = SkyPlugin::get()->getPostModel()::get();
+            $posts = SkyPlugin::get()->getModel('Post')::get();
             $posts->each(function ($item, $key) {
                 $item->tags()->detach();
                 $item->delete();
             });
             Schema::disableForeignKeyConstraints();
-            SkyPlugin::get()->getTagModel()::truncate();
+            SkyPlugin::get()->getModel('Tag')::truncate();
             Schema::enableForeignKeyConstraints();
 
             Notification::make()
@@ -77,7 +77,7 @@ class Importer extends Page
 
     public function savePost($post)
     {
-        $zeusPost = SkyPlugin::get()->getPostModel()::findOrNew($post->ID);
+        $zeusPost = SkyPlugin::get()->getModel('Post')::findOrNew($post->ID);
         if (! $zeusPost->exists || $this->overwrite) {
             $zeusPost->id = $post->ID;
             $zeusPost->title = $post->post_title;
