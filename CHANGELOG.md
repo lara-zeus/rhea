@@ -2,6 +2,15 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## v2.0.3 - 2023-12-15
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/lara-zeus/rhea/pull/18
+* fix ui by @atmonshi in https://github.com/lara-zeus/rhea/pull/19
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/v2.0.2...v2.0.3
+
 ## 1.0.13 - 2023-07-12
 
 ### What's Changed
