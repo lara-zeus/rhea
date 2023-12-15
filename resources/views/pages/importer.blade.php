@@ -1,5 +1,4 @@
-<div class="space-y-4">
-
+<x-filament::page>
     <x-filament::section>
         found:
         <span class="text-md font-semibold">{{ $this->getViewData()['wpPosts']->count() }}</span>
@@ -13,4 +12,4 @@
             Import
         </x-filament::button>
     </div>
-</div>
+</x-filament::page>
