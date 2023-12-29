@@ -22,4 +22,4 @@ Lara-zeus Rhea, is a tool that helps you migrate your wordpress blog to zeus sky
 
 available support channels:
 * open an issue on [GitHub](https://github.com/lara-zeus/rhea/issues)
-* email us using the [contact center](https://still-code.com/contact-us/lara-zeus)
+* email us using the [contact center](https://larazeus.com/contact-us)
