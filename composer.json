@@ -64,11 +64,5 @@
             }
         }
     },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "github",
-            "url": "https://github.com/atmonshi/filament-navigation"
-        }
-    ]
+    "minimum-stability": "dev"
 }
