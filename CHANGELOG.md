@@ -2,6 +2,15 @@
 
 All notable changes to `Rhea` will be documented in this file
 
+## v2.0.4 - 2024-01-13
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/lara-zeus/rhea/pull/20
+* remove navigation package by @atmonshi in https://github.com/lara-zeus/rhea/pull/21
+
+**Full Changelog**: https://github.com/lara-zeus/rhea/compare/v2.0.3...v2.0.4
+
 ## v2.0.3 - 2023-12-15
 
 ### What's Changed
