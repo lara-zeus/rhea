@@ -87,9 +87,9 @@ class Importer extends Page
             $zeusPost->password = ! empty($post->post_password) ? $post->post_password : null;
             $zeusPost->post_type = $post->post_type;
             $zeusPost->content = $post->post_content;
-            $zeusPost->user_id = auth()->user()->id; //$post->post_author;
+            $zeusPost->user_id = auth()->user()->id; // $post->post_author;
             $zeusPost->parent_id = $post->post_parent;
-            //$zeusPost->featured_image = $post->title;
+            // $zeusPost->featured_image = $post->title;
             $zeusPost->created_at = $post->post_date;
             $zeusPost->published_at = $post->post_date;
             $zeusPost->save();
