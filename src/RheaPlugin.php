@@ -3,6 +3,7 @@
 namespace LaraZeus\Rhea;
 
 use Filament\Contracts\Plugin;
+use Filament\FilamentManager;
 use Filament\Panel;
 use Filament\Support\Concerns\EvaluatesClosures;
 use LaraZeus\Rhea\Filament\Pages\Importer;
@@ -30,7 +31,7 @@ class RheaPlugin implements Plugin
         return app(static::class);
     }
 
-    public static function get(): Plugin | \Filament\FilamentManager
+    public static function get(): Plugin | FilamentManager
     {
         return filament(app(static::class)->getId());
     }
